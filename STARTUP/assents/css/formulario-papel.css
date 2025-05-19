@@ -1,0 +1,175 @@
+/* Resetando o padding, margin e box-sizing para garantir um layout limpo */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Estilo para o corpo da página */
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e9f2fb;
+    font-size: 16px;
+    position: relative;
+}
+
+/* Círculo superior direito no corpo da página */
+body::before {
+    content: '';
+    position: absolute;
+    top: -120px;
+    right: -120px;
+    width: 420px;
+    height: 420px;
+    background-color: #003366;
+    border-radius: 50%;
+    z-index: -1;
+    animation: slideInDown;
+    animation-duration: 1s;
+}
+
+/* Círculo inferior esquerdo no corpo da página */
+body::after {
+    content: '';
+    position: absolute;
+    bottom: -120px;
+    left: -120px;
+    width: 420px;
+    height: 420px;
+    background-color: #003366;
+    border-radius: 50%;
+    z-index: -1;
+    animation: slideInUp;
+    animation-duration: 1s;
+}
+
+/* Container do formulário */
+.container {
+    width: 100%;
+    max-width: 450px;
+    background: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    animation: fadeInBottomRight;
+    animation-duration: 2s;
+}
+
+/* Estilo do título do formulário */
+.form h1 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 1.9rem;
+    color: #003366;
+    font-weight: 600;
+}
+
+/* Grupo de opções (checkbox) */
+.checkbox-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 1.5rem;
+}
+
+/* Estilo da label do checkbox (que é agora um clique para abrir as opções) */
+.checkbox-label {
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+    color: #003366;
+    cursor: pointer;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    transition: color 0.3s ease;
+}
+
+/* Estilo da seta (ícone) */
+.checkbox-label .arrow {
+    margin-left: 10px;
+    font-size: 1.4rem;
+    transition: transform 0.3s ease;
+}
+
+/* Quando as opções são mostradas, aplica-se a rotação */
+.checkbox-label .arrow.rotate {
+    transform: rotate(180deg);
+}
+
+/* Estilo das opções que aparecerão após o clique */
+.options {
+    display: none;
+    margin-top: 1rem;
+    padding-left: 1.5rem;
+}
+
+.options.show {
+    display: block;
+}
+
+/* Estilo das labels das opções */
+.options label {
+    display: block;
+    font-size: 1.05rem;
+    color: #4d4b4b;
+    margin: 0.5rem 0;
+    cursor: pointer;
+}
+
+.options label:focus-within{
+    color: #002244;
+}
+
+/* Estilo dos inputs de rádio dentro das opções */
+.options input {
+    margin-right: 10px;
+}
+
+/* Estilo do link que envolve o botão */
+.button-link {
+    display: inline-block;
+    width: 100%;
+    text-decoration: none;
+}
+
+/* Estilo do botão de envio */
+button {
+    width: 100%;
+    padding: 0.8rem;
+    border: none;
+    background-color: #003366;
+    color: #fff;
+    font-size: 1.1rem;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 1.5rem;
+}
+
+button:hover {
+    background-color: #002244; /* Tom mais escuro da cor principal ao passar o mouse */
+    box-shadow: 0 0 10px #002244;
+}
+
+/* Animação de fade-in */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+    .container {
+        width: 90%;
+    }
+}

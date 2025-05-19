@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assents/css/agendamento.css">
+    <!-- Link do FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Agendamento</title>
+</head>
+<body>
+    <header class="header">
+        <div class="interface">
+            <div class="logo">
+                    <img src="assents/img/logo.png" alt="Logo da Ceará Med" height="85px" width="230">
+            </div><!--logo-->
+
+            <nav class="menu-desktop">
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="contatos.html">Contatos</a></li>
+                    <li class="ativo"><a href="agendamento.html">Agendamento</a></li>
+                    <li><a href="formulario-papel.html">Cadastre-se</a></li>
+                </ul>
+            </nav>
+
+            
+
+            <div class="btn-contato">
+                <a href="login.html">
+                    <button>Login</button>
+                </a>
+            </div><!--btn-contato-->
+        </div><!--interface-->
+    </header>
+
+
+    <div class="container">
+        <!-- Botão para adicionar agendamento -->
+        <button id="add-schedule" onclick="openForm()"><i class="fas fa-plus"></i> Adicionar Agendamento</button>
+
+        <!-- Novo botão para listar pacientes -->
+        <button id="list-patients" onclick="openListPatients()"><i class="fas fa-users"></i> Listar Pacientes</button>
+
+        <div class="list" id="schedule-list-container">
+            <h2>Lista de Agendamentos</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nome do Paciente</th>
+                        <th>Telefone</th>
+                        <th>Horário</th>
+                        <th>Data</th>
+                        <th>Procedimento</th>
+                        <th>Opções</th>
+                    </tr>
+                </thead>
+                <tbody id="schedule-list">
+                    <tr>
+                        <td colspan="6">Sem Conteúdo.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Formulário de Agendamento -->
+        <div class="form-popup" id="scheduleForm">
+            <h3>Adicionar Nova Agenda</h3>
+            <form id="schedule-form">
+                <label for="name">Nome</label>
+                <input type="text" id="name" placeholder="Digite o nome do paciente...">
+                
+                <label for="phone">Telefone</label>
+                <input type="text" id="phone" placeholder="Digite o telefone do paciente...">
+                
+                <label for="time">Hora</label>
+                <input type="time" id="time">
+                
+                <label for="date">Data</label>
+                <input type="date" id="date">
+                
+                <label for="procedure">Procedimento</label>
+                <input type="text" id="procedure" placeholder="Ex.: Exame de Sangue">
+                
+                <div class="form-buttons">
+                    <button type="button" id="closeBtn"><i class="fas fa-arrow-left"></i> Voltar</button>
+                    <button type="button" id="saveBtn"><i class="fas fa-save"></i> Salvar</button>
+                </div>
+            </form>
+        </div>
+
+        <!-- Tela de Listagem de Pacientes -->
+        <div class="list-patients" id="list-patients-container" style="display: none;">
+            <button id="backBtn"><i class="fas fa-arrow-left"></i> Voltar</button>
+            <h1>Lista de Pacientes</h1>
+            <div class="search-container">
+                <input type="text" id="searchInput" placeholder="Pesquise por nome..." />
+                <span id="searchIcon" class="search-icon"><i class="fas fa-search"></i></span>
+            </div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nome do Cliente</th>
+                        <th>Telefone</th>
+                        <th>Horário</th>
+                        <th>Data</th>
+                        <th>Procedimento</th>
+                        <th>Opções</th>
+                    </tr>
+                </thead>
+                <tbody id="patients-list">
+                    <!-- Aqui serão exibidos os pacientes filtrados -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="assents/js/agendamento.js"></script>
+</body>
+</html>
