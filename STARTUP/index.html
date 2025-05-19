@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assents/css/style.css">
+    <!-- BOOTSTRAP ICONS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- FIM BOOTSTRAP ICONS -->
+
+    <!-- SWIPER JS PARA O CARROSEL -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- FIM SWIPER JS PARA O CARROSEL -->
+
+    <!-- FONT AWESOME CDN (ICONS) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- FIM FONTAWESOME PARA ESTRELA(ICONS) -->
+
+    <!-- REMIX ICONS -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+    <!-- FIM REMIX ICONS -->
+
+    <title>CEARÁ MED</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="interface">
+            <div class="logo">
+                <img src="assents/img/logo.png" alt="Logo da Ceará Med" height="85px" width="230">
+            </div><!--logo-->
+
+            <nav class="menu-desktop">
+                <ul>
+                    <li class="ativo"><a href="index.html">Início</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="contatos.html">Contatos</a></li>
+                    <li><a href="agendamento.html">Agendamento</a></li>
+                    <li><a href="formulario-papel.html">Cadastre-se</a></li>
+                </ul>
+            </nav>
+
+
+
+            <div class="btn-contato">
+                <a href="login.html">
+                    <button>Login</button>
+                </a>
+            </div><!--btn-contato-->
+        </div><!--interface-->
+    </header>
+
+    <main>
+        <section class="topo-do-site">
+            <div class="interface">
+                <div class="welcome-message">
+                    <h1>Bem-vindo ao <span>Ceará Med!</span></h1>
+                    <p>Agende suas consultas de forma prática e rápida. Nossa plataforma foi criada para facilitar seu
+                        acesso à saúde, garantindo lembretes automáticos e total controle sobre seus compromissos
+                        médicos. Acesse o melhor da medicina com apenas alguns cliques e experimente a tranquilidade de
+                        estar sempre em dia com a sua saúde! Faça parte dessa revolução no atendimento médico!</p>
+                </div><!--welcome-message-->
+
+                <div class="cta-button">
+                    <a href="agendamento.html">
+                        <button>Agende sua consulta agora!</button>
+                    </a>
+                </div><!--cta-button-->
+            </div>
+        </section><!--topo-do-site-->
+    </main>
+
+
+    <!-- Primeira tela usando scroll -->
+    <section class="especialidades">
+        <div class="interface-2">
+            <h2>NOSSAS <span>ESPECIALIDADES</span></h2>
+            <div class="flex">
+                <div class="especialidades-box">
+                    <i class="bi bi-heart-pulse"></i>
+                    <h3>Trabalho de cuidado</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde, earum. Soluta ipsam doloribus,
+                        nulla deleniti doloremque laborum incidunt eius maiores dolore tempore. Non assumenda, quae
+                        quasi alias dignissimos architecto. Harum!</p>
+                </div><!--especialidades-box-->
+
+                <div class="especialidades-box">
+                    <i class="bi bi-chat-square-heart"></i>
+                    <h3>Chat com médico</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde, earum. Soluta ipsam doloribus,
+                        nulla deleniti doloremque laborum incidunt eius maiores dolore tempore. Non assumenda, quae
+                        quasi alias dignissimos architecto. Harum!</p>
+                </div><!--especialidades-box-->
+
+                <div class="especialidades-box">
+                    <i class="bi bi-calendar-heart"></i>
+                    <h3>Agendamento de consultas</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde, earum. Soluta ipsam doloribus,
+                        nulla deleniti doloremque laborum incidunt eius maiores dolore tempore. Non assumenda, quae
+                        quasi alias dignissimos architecto. Harum!</p>
+                </div><!--especialidades-box-->
+            </div><!--flex-->
+        </div><!--interface-->
+    </section><!--especialidades-->
+    <!-- fim da primeira tela usando scroll -->
+
+
+    <!-- segunda tela usando o scroll -->
+    <section id="testimonials">
+        <div id="testimonials_header">
+            <h1>Avaliações</h1>
+            <h2>
+                O que os clientes dizem
+            </h2>
+            <p>
+                Quer saber o que torna a nossa marca tão especial?
+                Confira o que nossos clientes têm a dizer
+            </p>
+        </div>
+
+        <!-- Slider main container -->
+        <div class="swiper">
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                    <div class="testimonial-rate">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div> <!-- fim do testimonials-rate -->
+
+                    <blockquote class="testimonial-quote">
+                        "Experiência incrível! Desde o primeiro contato, fui muito bem atendido e recebi todas as
+                        informações de forma clara. Recomendo para todos!"
+                    </blockquote>
+
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <img src="assents/img/avatar1.jpg" alt="Imagem de uma pessoa">
+                        </div>
+
+                        <div class="author-info">
+                            <h3>José Fernando</h3>
+                            <p>Cliente desde de 2020</p>
+                        </div>
+                    </div> <!-- fim do testimonail-author-->
+                </div> <!--fim do swiper-slide -->
+
+                <div class="swiper-slide">
+                    <div class="testimonial-rate">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div> <!-- fim do testimonials-rate -->
+
+                    <blockquote class="testimonial-quote">
+                        "Experiência incrível! Desde o primeiro contato, fui muito bem atendido e recebi todas as
+                        informações de forma clara. Recomendo para todos!"
+                    </blockquote>
+
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <img src="assents/img/avatar2.jpg" alt="Imagem de uma pessoa">
+                        </div>
+
+                        <div class="author-info">
+                            <h3>Ana Maria</h3>
+                            <p>Cliente desde de 2020</p>
+                        </div>
+                    </div> <!-- fim do testimonail-author-->
+                </div> <!--fim do swiper-slide -->
+
+                <div class="swiper-slide">
+                    <div class="testimonial-rate">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div> <!-- fim do testimonials-rate -->
+
+                    <blockquote class="testimonial-quote">
+                        "Experiência incrível! Desde o primeiro contato, fui muito bem atendido e recebi todas as
+                        informações de forma clara. Recomendo para todos!"
+                    </blockquote>
+
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <img src="assents/img/avatar3.jpg" alt="Imagem de uma pessoa">
+                        </div>
+
+                        <div class="author-info">
+                            <h3>Francisco Marques</h3>
+                            <p>Cliente desde de 2020</p>
+                        </div>
+                    </div> <!-- fim do testimonail-author-->
+                </div> <!--fim do swiper-slide -->
+
+                <div class="swiper-slide">
+                    <div class="testimonial-rate">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div> <!-- fim do testimonials-rate -->
+
+                    <blockquote class="testimonial-quote">
+                        "Experiência incrível! Desde o primeiro contato, fui muito bem atendido e recebi todas as
+                        informações de forma clara. Recomendo para todos!"
+                    </blockquote>
+
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <img src="assents/img/avatar1.jpg" alt="Imagem de uma pessoa">
+                        </div>
+
+                        <div class="author-info">
+                            <h3>Gustavo Henrique</h3>
+                            <p>Cliente desde de 2020</p>
+                        </div>
+                    </div> <!-- fim do testimonail-author-->
+                </div> <!--fim do swiper-slide -->
+
+                <div class="swiper-slide">
+                    <div class="testimonial-rate">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div> <!-- fim do testimonials-rate -->
+
+                    <blockquote class="testimonial-quote">
+                        "Experiência incrível! Desde o primeiro contato, fui muito bem atendido e recebi todas as
+                        informações de forma clara. Recomendo para todos!"
+                    </blockquote>
+
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <img src="assents/img/avatar2.jpg" alt="Imagem de uma pessoa">
+                        </div>
+
+                        <div class="author-info">
+                            <h3>Mariana Souza</h3>
+                            <p>Cliente desde de 2020</p>
+                        </div>
+                    </div> <!-- fim do testimonail-author-->
+                </div> <!--fim do swiper-slide -->
+
+                <div class="swiper-slide">
+                    <div class="testimonial-rate">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div> <!-- fim do testimonials-rate -->
+
+                    <blockquote class="testimonial-quote">
+                        "Experiência incrível! Desde o primeiro contato, fui muito bem atendido e recebi todas as
+                        informações de forma clara. Recomendo para todos!"
+                    </blockquote>
+
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <img src="assents/img/avatar3.jpg" alt="Imagem de uma pessoa">
+                        </div>
+
+                        <div class="author-info">
+                            <h3>Francisco Damião</h3>
+                            <p>Cliente desde de 2020</p>
+                        </div>
+                    </div> <!-- fim do testimonail-author-->
+                </div> <!--fim do swiper-slide -->
+
+            </div> <!-- fim do swiper-wrapper-->
+
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div><!-- Fim slider main container -->
+    </section> <!--fim da testimonials-->
+    <!-- fim da segunda tela usando o scroll -->
+
+
+    <!-- Terceira tela usando o scroll (Sobre Nós) -->
+    <section>
+        <div class="wrapper">
+            <div class="title">
+                <h4>Conheça nosso time de <span>Dev's</span></h4>
+            </div> <!--fim da title -->
+
+            <div class="card_Container">
+                <div class="card">
+                    <div class="imbBx">
+                        <img src="assents/img-integrantes/pedro.jpg" alt="Imagem do integrante da equipe">
+                    </div> <!-- fim da imbBx -->
+
+                    <div class="content">
+                        <div class="contentBx">
+                            <h3>Pedro Lucas <br><span>UI/UX Designer</span></h3>
+                        </div> <!-- fim contentBx -->
+                        <ul class="sci">
+                            <li style="--i: 1">
+                                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                            </li>
+
+                            <li style="--i: 2">
+                                <a href="#"><i class="fa-brands fa-github"></i></a>
+                            </li>
+
+                            <li style="--i: 3">
+                                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                            </li>
+                        </ul>
+
+                    </div> <!-- fim content -->
+                </div> <!-- fim do card -->
+
+                <div class="card">
+                    <div class="imbBx">
+                        <img src="assents/img-integrantes/jefferson.jpg" alt="Imagem do integrante da equipe">
+                    </div> <!-- fim da imbBx -->
+
+                    <div class="content">
+                        <div class="contentBx">
+                            <h3>Jefferson Albuquerque <br><span>Front-End Web Developer</span></h3>
+                        </div> <!-- fim contentBx -->
+                        <ul class="sci">
+                            <li style="--i: 1">
+                                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                            </li>
+
+                            <li style="--i: 2">
+                                <a href="#"><i class="fa-brands fa-github"></i></a>
+                            </li>
+
+                            <li style="--i: 3">
+                                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                            </li>
+                        </ul>
+
+                    </div> <!-- fim content -->
+                </div> <!-- fim do card -->
+
+                <div class="card">
+                    <div class="imbBx">
+                        <img src="assents/img-integrantes/naiara.jpg" alt="Imagem do integrante da equipe">
+                    </div> <!-- fim da imbBx -->
+
+                    <div class="content">
+                        <div class="contentBx">
+                            <h3>Naiara Albuquerque <br><span>Front-End Web Developer</span></h3>
+                        </div> <!-- fim contentBx -->
+                        <ul class="sci">
+                            <li style="--i: 1">
+                                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                            </li>
+
+                            <li style="--i: 2">
+                                <a href="#"><i class="fa-brands fa-github"></i></a>
+                            </li>
+
+                            <li style="--i: 3">
+                                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                            </li>
+                        </ul>
+
+                    </div> <!-- fim content -->
+                </div> <!-- fim do card -->
+
+                <div class="card">
+                    <div class="imbBx">
+                        <img src="assents/img-integrantes/sara.jpg" alt="Imagem do integrante da equipe">
+                    </div> <!-- fim da imbBx -->
+
+                    <div class="content">
+                        <div class="contentBx">
+                            <h3>Kauan Queiroz <br><span>Front-End Web Developer</span></h3>
+                        </div> <!-- fim contentBx -->
+                        <ul class="sci">
+                            <li style="--i: 1">
+                                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                            </li>
+
+                            <li style="--i: 2">
+                                <a href="#"><i class="fa-brands fa-github"></i></a>
+                            </li>
+
+                            <li style="--i: 3">
+                                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                            </li>
+                        </ul>
+
+                    </div> <!-- fim content -->
+                </div> <!-- fim do card -->
+
+                <div class="card">
+                    <div class="imbBx">
+                        <img src="assents/img-integrantes/kauan.jpg" alt="Imagem do integrante da equipe">
+                    </div> <!-- fim da imbBx -->
+
+                    <div class="content">
+                        <div class="contentBx">
+                            <h3>Kauan Queiroz<br><span>Back-End Web Developer</span></h3>
+                        </div> <!-- fim contentBx -->
+                        <ul class="sci">
+                            <li style="--i: 1">
+                                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                            </li>
+
+                            <li style="--i: 2">
+                                <a href="#"><i class="fa-brands fa-github"></i></a>
+                            </li>
+
+                            <li style="--i: 3">
+                                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                            </li>
+                        </ul>
+
+                    </div> <!-- fim content -->
+                </div> <!-- fim do card -->
+
+                <div class="card">
+                    <div class="imbBx">
+                        <img src="assents/img-integrantes/bruno.jpg" alt="Imagem do integrante da equipe">
+                    </div> <!-- fim da imbBx -->
+
+                    <div class="content">
+                        <div class="contentBx">
+                            <h3>Bruno Roger <br><span>Back-End Web Developer</span></h3>
+                        </div> <!-- fim contentBx -->
+                        <ul class="sci">
+                            <li style="--i: 1">
+                                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                            </li>
+
+                            <li style="--i: 2">
+                                <a href="#"><i class="fa-brands fa-github"></i></a>
+                            </li>
+
+                            <li style="--i: 3">
+                                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                            </li>
+                        </ul>
+
+                    </div> <!-- fim content -->
+                </div> <!-- fim do card -->
+
+                <div class="card">
+                    <div class="imbBx">
+                        <img src="assents/img-integrantes/andrey.jpg" alt="Imagem do integrante da equipe">
+                    </div> <!-- fim da imbBx -->
+
+                    <div class="content">
+                        <div class="contentBx">
+                            <h3>Andrey Canuto <br><span>Back-End Web Developer</span></h3>
+                        </div> <!-- fim contentBx -->
+                        <ul class="sci">
+                            <li style="--i: 1">
+                                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                            </li>
+
+                            <li style="--i: 2">
+                                <a href="#"><i class="fa-brands fa-github"></i></a>
+                            </li>
+
+                            <li style="--i: 3">
+                                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                            </li>
+                        </ul>
+
+                    </div> <!-- fim content -->
+                </div> <!-- fim do card -->
+
+                <div class="card">
+                    <div class="imbBx">
+                        <img src="assents/img-integrantes/ruan.jpg" alt="Imagem do integrante da equipe">
+                    </div> <!-- fim da imbBx -->
+
+                    <div class="content">
+                        <div class="contentBx">
+                            <h3>Ruan Pablo <br><span>Back-End Web Developer</span></h3>
+                        </div> <!-- fim contentBx -->
+                        <ul class="sci">
+                            <li style="--i: 1">
+                                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                            </li>
+
+                            <li style="--i: 2">
+                                <a href="#"><i class="fa-brands fa-github"></i></a>
+                            </li>
+
+                            <li style="--i: 3">
+                                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                            </li>
+                        </ul>
+
+                    </div> <!-- fim content -->
+                </div> <!-- fim do card -->
+            </div> <!-- card_Container -->
+        </div> <!--fim da wrapper -->
+    </section>
+    <!-- Fim da terceira tela usando o scroll (Sobre Nós) -->
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <!-- Logo e Descrição -->
+            <div class="footer-section">
+                <h2 class="footer-title">CearaMed</h2>
+                <p class="footer-text">
+                    Inovação e cuidado com a saúde do Ceará. Soluções médicas com tecnologia e humanização.
+                </p>
+            </div>
+
+            <!-- Links úteis -->
+            <div class="footer-section">
+                <h4 class="footer-subtitle">Links Rápidos</h4>
+                <ul class="footer-links">
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="sobre.html">Sobre Nós</a></li>
+                    <li><a href="agendamento.html">Agendamento</a></li>
+                    <li><a href="contatos.html">Contato</a></li>
+                </ul>
+            </div>
+
+            <!-- Contato -->
+            <div class="footer-section">
+                <h4 class="footer-subtitle">Contato</h4>
+                <p class="footer-text">
+                    Massapê - CE <br/>
+                    (88) 99999-9999 <br/>
+                    cearamed@gmail.com
+                </p>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2025 CearaMed. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+    <!-- Fim do footer -->
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="assents/js/script.js"></script>
+</body>
+
+</html>

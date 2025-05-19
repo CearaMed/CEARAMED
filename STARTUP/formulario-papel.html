@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Adicionando o Font Awesome para ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Fim do adicionando o Font Awesome para ícones -->
+     
+    <link rel="stylesheet" href="assents/css/formulario-papel.css">
+
+    <!-- CSS ANIMATION -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <!-- FIM CSS ANIMATION -->
+    <title>Formulário - Seleção de Papel</title>
+</head>
+<body>
+    <div class="container">
+        <div class="form">
+            <h1>Selecione seu Papel no Sistema</h1>
+            <form>
+                <!-- Título e seta para "Selecione um papel" -->
+                <div class="checkbox-group">
+                    <div id="role" class="checkbox-label">
+                        Selecione um papel
+                        <!-- Ícone Font Awesome de seta para baixo -->
+                        <i class="fas fa-chevron-down arrow"></i>
+                    </div>
+                    <!-- As opções de papel -->
+                    <div class="options">
+                        <label>
+                            <input type="radio" name="role" value="medico"> Médico
+                        </label>
+                        <label>
+                            <input type="radio" name="role" value="paciente"> Paciente
+                        </label>
+                        <label>
+                            <input type="radio" name="role" value="instituicao"> Instituição
+                        </label>
+                    </div>
+                </div>
+                
+                <!-- Colocando o botão dentro de uma tag <a> -->
+                <a href="javascript:void(0);" class="button-link" id="submitButton">
+                    <button type="button">Confirmar</button>
+                </a>
+
+                <a href="index.html" class="button-link">
+                    <button type="button">Voltar ao início</button>
+                </a>
+            </form>
+        </div>
+    </div>
+    <script src="assents/js/formulario-papel.js"></script>
+</body>
+</html>
